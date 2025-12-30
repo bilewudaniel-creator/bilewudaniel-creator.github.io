@@ -3,10 +3,9 @@ if (subtitle) {
     subtitle.textContent = "This webpage was built using HTML, CSS, and JavaScript";
 }
 
-const footerText = document.querySelector("footer p");
-if (footerText) {
-    const year = new Date().getFullYear();
-    footerText.textContent = `© ${year} Daniel Bilewu`;
+const footerYear = document.querySelector("#year");
+if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
 }
 
 const cards = document.querySelectorAll(".card");

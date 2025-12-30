@@ -2,35 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Bilewu Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
 <header>
-    <h1>Hello, I'm Daniel Bilewu</h1>
-    <p>Welcome to my personal webpage</p>
+    <h1>Daniel Bilewu</h1>
+    <p>This webpage was built using HTML, CSS, and JavaScript</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="card">
-    <h2>About Me</h2>
-    <p>
-        My name is Daniel Bilewu. I am a Computer Science student
-        with an interest in technology and software development.
-    </p>
-</section>
+<main>
+    <section id="about" class="cards">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Computer Science student who loves technology and coding. 
+                I enjoy building mobile and web applications, exploring new technologies, 
+                and solving real-world problems through programming.
+            </p>
+        </div>
+    </section>
 
-<section class="card">
-    <h2>Skills & Interests</h2>
-    <ul>
-        <li>Web Development</li>
-        <li>Python Programming</li>
-        <li>Problem Solving</li>
-    </ul>
-</section>
+    <section id="skills" class="cards">
+        <div class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Python Programming</li>
+                <li>App Development with Flutter & Dart</li>
+                <li>Database Design & SQL</li>
+                <li>API Integration & RESTful Services</li>
+                <li>Version Control with Git & GitHub</li>
+                <li>UI/UX Principles</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="cards">
+        <div class="card">
+            <h2>Projects</h2>
+            <p>
+                I have built several projects including web apps, mobile apps, and automation scripts. 
+                I focus on practical solutions and clean, maintainable code.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="cards">
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Email: bilewudaniel@gmail.com</p>
+            <p>Phone: +234 9165679307</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
-    <p>© 2025 Daniel Bilewu</p>
+    <p>© <span id="year"></span> Daniel Bilewu</p>
 </footer>
 
 <script src="script.js"></script>
